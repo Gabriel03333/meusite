@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Crimson Pro';
+        font-style: normal;
+        font-display: "sans-serif";
+        src: url("/fonts/CrimsonPro.ttf") format("truetype");
+    }
+
+    html {
+        font-family: "Crimson Pro";
+        line-height: 200%;
+        font-display: "sans-serif";
+        color: #adb5bd;
+        background-color: #0b090a;
+    }
+
+    article>h2 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-top: 1.5rem;
+    }
+
+    article>h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 1.2rem;
+    }
+
+    article>h5 {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    article>p {
+        padding: 0.5rem 0;
+    }
+
+    ol {
+        list-style: normal;
+        margin: 1.1rem 0;
+        padding-left: 1.5rem;
+    }
+
+    p>a {
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+    p>img {
+        padding: 1.5rem 0;
+    }
+
+    p>strong>a {
+        color: red;
+        text-decoration: underline;
+    }
+
+    pre {
+        padding: 1rem;
+        overflow-x: auto;
+        font-size: 1.2rem;
+        background-color: #111827 !important;
+    }
+
+    .cookie-container {
+        position: fixed;
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        background: #161a1d;
+        color: #d3d3d3;
+        padding: 0 32px;
+        box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.38);
+
+        transition: 500ms;
+    }
+
+    .cookie-container.active {
+        bottom: 0;
+    }
+}
